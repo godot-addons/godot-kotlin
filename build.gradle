@@ -1,0 +1,48 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            url 'https://dl.bintray.com/jetbrains/kotlin-native-dependencies'
+        }
+    }
+
+    dependencies {
+        classpath 'org.jetbrains.kotlin:kotlin-native-gradle-plugin:+'
+    }
+}
+
+apply plugin: 'konan'
+
+konan.targets = [ 'linux', 'macbook', 'mingw' ]
+
+group 'org.godot'
+version '1.0'
+
+konanArtifacts {
+    interop('godot') {
+    }
+
+//    library('gd') {
+//        enableOptimizations true
+//    }
+
+//    library('KotlinTest') {
+//        srcFiles fileTree('src/main/kotlin')
+//    }
+}
+
+apply plugin: 'maven-publish'
+
+def userDir = "${System.getenv('HOME')}" ?: "${System.getProperty('user.home')}"
+//String homeDir = "./.m2-kotlin-native"
+def localMavenRepo = "file://${new File(userDir as String)}/.m2-kotlin-native"
+//def localMavenRepo = "file://${new File(homeDir)}/.m2-kotlin-native"
+//def localMavenRepo = "file://./.m2-kotlin-native"
+
+publishing {
+    repositories {
+        maven {
+            url = localMavenRepo
+        }
+    }
+}
