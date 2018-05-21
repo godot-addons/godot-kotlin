@@ -33,10 +33,11 @@ konanArtifacts {
 
 apply plugin: 'maven-publish'
 
-//def userDir = "${System.getenv("HOME")}" ?: "${System.getProperty("user.home")}"
-//String homeDir = "/Users/user/.m2-kotlin-native"
-//def localMavenRepo = "file://${new File(userDir as String)}/.m2-kotlin-native"
+def userDir = "${System.getenv("HOME")}" ?: "${System.getProperty("user.home")}"
+//String homeDir = "./.m2-kotlin-native"
+def localMavenRepo = "file://${new File(userDir as String)}/.m2-kotlin-native"
 //def localMavenRepo = "file://${new File(homeDir)}/.m2-kotlin-native"
+//def localMavenRepo = "file://./.m2-kotlin-native"
 
 publishing {
     repositories {
