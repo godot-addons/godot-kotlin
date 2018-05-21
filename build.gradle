@@ -15,7 +15,7 @@ apply plugin: 'konan'
 
 konan.targets = [ 'linux', 'macbook', 'mingw' ]
 
-group 'godot'
+group 'org.godot'
 version '1.0'
 
 konanArtifacts {
@@ -34,9 +34,9 @@ konanArtifacts {
 apply plugin: 'maven-publish'
 
 //def userDir = "${System.getenv("HOME")}" ?: "${System.getProperty("user.home")}"
-String homeDir = "/Users/brandonlamb/.m2-kotlin-native"
+//String homeDir = "/Users/user/.m2-kotlin-native"
 //def localMavenRepo = "file://${new File(userDir as String)}/.m2-kotlin-native"
-def localMavenRepo = "file://${new File(homeDir)}/.m2-kotlin-native"
+//def localMavenRepo = "file://${new File(homeDir)}/.m2-kotlin-native"
 
 publishing {
     repositories {
