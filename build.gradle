@@ -2,12 +2,12 @@ buildscript {
     repositories {
         mavenCentral()
         maven {
-            url "https://dl.bintray.com/jetbrains/kotlin-native-dependencies"
+            url 'https://dl.bintray.com/jetbrains/kotlin-native-dependencies'
         }
     }
 
     dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-native-gradle-plugin:+"
+        classpath 'org.jetbrains.kotlin:kotlin-native-gradle-plugin:+'
     }
 }
 
@@ -33,7 +33,7 @@ konanArtifacts {
 
 apply plugin: 'maven-publish'
 
-def userDir = "${System.getenv("HOME")}" ?: "${System.getProperty("user.home")}"
+def userDir = "${System.getenv('HOME')}" ?: "${System.getProperty('user.home')}"
 //String homeDir = "./.m2-kotlin-native"
 def localMavenRepo = "file://${new File(userDir as String)}/.m2-kotlin-native"
 //def localMavenRepo = "file://${new File(homeDir)}/.m2-kotlin-native"
