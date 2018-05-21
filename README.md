@@ -8,16 +8,17 @@ I have come across one (maybe two) others from Google searching who have posted 
 
 ## Setup
 
-### Clone godot_headers
-
-```bash
-git clone git@github.com:GodotNativeTools/godot_headers.git
-```
-
 ### Clone godot-kotlin
 
 ```bash
 git clone git@github.com:godot-addons/godot-kotlin.git
+```
+
+### Clone godot_headers
+
+```bash
+cd godot-kotlin
+git clone git@github.com:GodotNativeTools/godot_headers.git
 ```
 
 ### Install Gradle

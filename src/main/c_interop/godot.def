@@ -1,17 +1,6 @@
 headers = gdnative/aabb.h gdnative/array.h gdnative/basis.h gdnative/color.h gdnative/dictionary.h gdnative/gdnative.h \
 gdnative/node_path.h gdnative/plane.h gdnative/pool_arrays.h gdnative/quat.h gdnative/rect2.h gdnative/rid.h \
-gdnative/string_name.h gdnative/transform.h gdnative/transform2d.h gdnative/variant.h gdnative/vector2.h gdnative/vector3.h
-headerFilter = gdnative/**
-compilerOpts.osx = -I../../Documents/src/godot_headers
-
-#linkerOpts.osx = -L/opt/local/lib -L/usr/local/opt/curl/lib -lcurl
-#linkerOpts.linux = -L/usr/lib/x86_64-linux-gnu -lcurl
-
-# Saving from previous attempt
-
-#staticLibraries = libgodot_cpp_bindings.a
-#libraryPaths = /Users/brandonlamb/Documents/src/godot-kotlin/lib
-#compilerOpts.osx = -framework Cocoa -arch x86_64
-#compilerOpts.osx = -arch x86_64
-#linkerOpts.osx = -Llib -lgodot_cpp_bindings -dynamiclib -arch x86_64 -framework Cocoa
-#linkerOpts.osx = -Llib -lgodot_cpp_bindings
+gdnative/string_name.h gdnative/transform.h gdnative/transform2d.h gdnative/variant.h gdnative/vector2.h gdnative/vector3.h \
+nativescript/godot_nativescript.h pluginscript/godot_pluginscript.h
+headerFilter = gdnative/*.h nativescript/*.h pluginscript/*.h
+compilerOpts.osx = -I./godot_headers
