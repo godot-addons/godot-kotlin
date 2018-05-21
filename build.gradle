@@ -28,6 +28,12 @@ konanArtifacts {
         libraries {
             artifact 'godotapi'
         }
+
+        //dependsOn ':godotapi:publish'
+        dependencies {
+            //artifactGodot 'org.godot:godotapi:1.0'
+            'org.godot:godotapi:1.0'
+        }
     }
 
 //    library('KotlinTest') {
