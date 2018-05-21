@@ -8,28 +8,25 @@ I have come across one (maybe two) others from Google searching who have posted 
 
 ## Setup
 
+1. Install Gradle
+1. Clone godot-kotlin
+1. Validate that the godot_headers submodule was pulled down, otherwise init
+
 ### Clone godot-kotlin
 
 ```bash
 git clone git@github.com:godot-addons/godot-kotlin.git
 ```
 
-### Clone godot_headers
-
-```bash
-cd godot-kotlin
-git clone git@github.com:GodotNativeTools/godot_headers.git
-```
-
-### Install Gradle
-
-Link to gradle...
-
 ### Run Gradle
 
 ```bash
 ./gradlew build
 ```
+
+## Structure
+
+* `src/main/c_interop/godot.def` is the Kotlin Native interop definition file which tells konan (kotlin native compiler) to include the c (*.h) header files from godot_headers
 
 ## Related
 
