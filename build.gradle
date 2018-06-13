@@ -19,12 +19,22 @@ group 'org.godot'
 version '1.0'
 
 konanArtifacts {
-    interop('godot') {
+    interop('godotapi') {
     }
 
-//    library('gd') {
-//        enableOptimizations true
-//    }
+    library('godot') {
+        enableOptimizations true
+
+        libraries {
+            artifact 'godotapi'
+        }
+
+        //dependsOn ':godotapi:publish'
+        dependencies {
+            //artifactGodot 'org.godot:godotapi:1.0'
+            'org.godot:godotapi:1.0'
+        }
+    }
 
 //    library('KotlinTest') {
 //        srcFiles fileTree('src/main/kotlin')

@@ -1,3 +1,11 @@
 package org.godot
 
-data class Godot(val version = 1.0)
+import godotapi.*
+
+data class Version(val version: Double = 1.0)
+
+class Node {
+  init {
+//    val x = godot_
+  }
+}
