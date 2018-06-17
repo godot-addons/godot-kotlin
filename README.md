@@ -16,17 +16,18 @@ I have come across one (maybe two) others from Google searching who have posted 
 
 ```bash
 git clone git@github.com:godot-addons/godot-kotlin.git
+git submodule init
 ```
 
 ### Run Gradle
 
 ```bash
-./gradlew build
+./gradlew clean build
 ```
 
 ## Structure
 
-* `src/main/c_interop/godot.def` is the Kotlin Native interop definition file which tells konan (kotlin native compiler) to include the c (*.h) header files from godot_headers
+* `src/main/c_interop/godotapi.def` is the Kotlin Native interop definition file which tells konan (kotlin native compiler) to include the c (*.h) header files from godot_headers
 
 ## Related
 
