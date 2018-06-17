@@ -38,3 +38,4 @@ https://plugins.jetbrains.com/plugin/10454-kotlin-native-for-clion
 
 * https://youtrack.jetbrains.com/issue/KT-23455
 * https://www.josephcatrambone.com/?p=1056#setup
+* https://github.com/JetBrains/kotlinconf-spinner/blob/master/kotlin-native/samples/fullstack/CMakeLists.txt
