@@ -1,6 +1,7 @@
 package godot
 
-import kotlinx.cinterop.*
+import kotlinx.cinterop.CPointer
+import cnames.structs.godot_gdnative_core_api_struct
 import godotapi.*
 
 object GDNative {

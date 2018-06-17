@@ -11,6 +11,7 @@ I have come across one (maybe two) others from Google searching who have posted 
 1. Install Gradle
 1. Clone godot-kotlin
 1. Validate that the godot_headers submodule was pulled down, otherwise init
+1. Install Kotlin plugin
 
 ### Clone godot-kotlin
 
@@ -24,6 +25,10 @@ git submodule init
 ```bash
 ./gradlew clean build
 ```
+
+### Kotlin Plugin
+
+https://plugins.jetbrains.com/plugin/10454-kotlin-native-for-clion
 
 ## Structure
 
