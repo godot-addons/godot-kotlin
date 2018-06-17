@@ -38,10 +38,13 @@ gdnative/vector3.h
 arvr/godot_arvr.h
 nativescript/godot_nativescript.h
 pluginscript/godot_pluginscript.h)
+#konanc_library(godotapi)
+#klib(godotapi)
 cinterop(
         NAME godotapi
         DEF_FILE src/main/c_interop/godotapi.def
-        COMPILER_OPTS "-I ./godot_headers"
+        COMPILER_OPTS "-I${CMAKE_CURRENT_LIST_DIR}/godot_headers"
+#        COMPILER_OPTS "-I ${GODOTAPI_INCLUDE_DIR}"
 )
 
 #cinterop(
