@@ -20,9 +20,10 @@ gdnative/vector2.h \
 gdnative/vector3.h \
 arvr/godot_arvr.h \
 nativescript/godot_nativescript.h \
-pluginscript/godot_pluginscript.h
+pluginscript/godot_pluginscript.h \
+gdnative_api_struct.gen.h
 
-headerFilter = gdnative/*.h arvr/*.h nativescript/*.h pluginscript/*.h
+headerFilter = gdnative/*.h arvr/*.h nativescript/*.h pluginscript/*.h *.gen.h
 
 compilerOpts = -I./godot_headers
 #compilerOpts.osx = -I./godot_headers

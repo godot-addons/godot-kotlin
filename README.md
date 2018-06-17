@@ -26,6 +26,14 @@ git submodule init
 ./gradlew clean build
 ```
 
+### Install the godotapi.klib
+
+Run the command below, then open the project in CLion and it should pick things up.
+
+```bash
+klib install build/konan/libs/macos_x64/godotapi.klib
+```
+
 ### Kotlin Plugin
 
 https://plugins.jetbrains.com/plugin/10454-kotlin-native-for-clion

@@ -16,28 +16,28 @@ project(godot-kotlin Kotlin)
 #    message(FATAL_ERROR Windows is not supported.)
 #endif ()
 
-konanc_library_search(godotapi gdnative/aabb.h
-gdnative/array.h
-gdnative/basis.h
-gdnative/color.h
-gdnative/dictionary.h
-gdnative/gdnative.h
-gdnative/node_path.h
-gdnative/plane.h
-gdnative/pool_arrays.h
-gdnative/quat.h
-gdnative/rect2.h
-gdnative/rid.h
-gdnative/string.h
-gdnative/string_name.h
-gdnative/transform.h
-gdnative/transform2d.h
-gdnative/variant.h
-gdnative/vector2.h
-gdnative/vector3.h
-arvr/godot_arvr.h
-nativescript/godot_nativescript.h
-pluginscript/godot_pluginscript.h)
+#konanc_library_search(godotapi gdnative/aabb.h
+#gdnative/array.h
+#gdnative/basis.h
+#gdnative/color.h
+#gdnative/dictionary.h
+#gdnative/gdnative.h
+#gdnative/node_path.h
+#gdnative/plane.h
+#gdnative/pool_arrays.h
+#gdnative/quat.h
+#gdnative/rect2.h
+#gdnative/rid.h
+#gdnative/string.h
+#gdnative/string_name.h
+#gdnative/transform.h
+#gdnative/transform2d.h
+#gdnative/variant.h
+#gdnative/vector2.h
+#gdnative/vector3.h
+#arvr/godot_arvr.h
+#nativescript/godot_nativescript.h
+#pluginscript/godot_pluginscript.h)
 #konanc_library(godotapi)
 #klib(godotapi)
 cinterop(

@@ -1,8 +1,9 @@
 package godot
 
-import kotlinx.cinterop.CPointer
-import cnames.structs.godot_gdnative_core_api_struct
+import kotlinx.cinterop.*
 import godotapi.*
+
+//typealias ApiStruct = CPointer<cnames.structs.godot_gdnative_core_api_struct>?
 
 object GDNative {
   var api: CPointer<godot_gdnative_core_api_struct>? = null
