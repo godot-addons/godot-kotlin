@@ -1,4 +1,4 @@
-package org.godot
+package godot
 
 import godotapi.*
 
